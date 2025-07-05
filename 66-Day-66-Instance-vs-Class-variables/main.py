@@ -11,11 +11,15 @@ class Employee:
 # Employee.showDetails(emp1)
 emp1 = Employee("Harry")
 emp1.raise_amount = 0.3
+emp2 = Employee("Rohan")
+emp1.showDetails()
+emp2.showDetails()
 emp1.companyName = "Apple India" 
 emp1.showDetails()
 Employee.companyName = "Google"
 print(Employee.companyName)
+emp1.showDetails()
 
-emp2 = Employee("Rohan")
+emp2.showDetails()
 emp2.companyName = "Nestle"
 emp2.showDetails()
