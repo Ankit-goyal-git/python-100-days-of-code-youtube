@@ -30,3 +30,7 @@ lst = [i*i for i in range(10)]
 print(lst)
 lst = [i*i for i in range(10) if i%2==0]
 print(lst)
+
+
+# print(marks[-1:-8:-1])
+# print(marks[:-4:-1])

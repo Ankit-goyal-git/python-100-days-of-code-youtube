@@ -25,3 +25,8 @@ print(c)
 
 
 # name(mname="Buchanan", lname="Barnes", fname="James")
+
+
+def avg(a=8,b=9):
+    print(a+b)
+avg(b=0)

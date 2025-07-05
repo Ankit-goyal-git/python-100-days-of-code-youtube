@@ -9,12 +9,15 @@ def isGreater(a, b):
     print("Second number is greater or equal")
 
 def isLesser(a, b):
+  print("ok")
   pass
+  
   
 
 a = 9
 b = 8
 isGreater(a, b)
+isLesser(a,b)
 calculateGmean(a, b)
 # gmean1 = (a*b)/(a+b)
 # print(gmean1)

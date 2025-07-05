@@ -14,7 +14,7 @@
 
 #   print(line)
 
-f = open('myfile2.txt', 'w')
-lines = ['line 1\n', 'line 2\n', 'line 3\n']
+f = open('myfile2.txt', 'a')
+lines = ['line 1\n', 'line 2', 'line I\n']
 f.writelines(lines)
 f.close()

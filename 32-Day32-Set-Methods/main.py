@@ -3,3 +3,8 @@ if "Carla" in info:
     print("Carla is present.")
 else:
     print("Carla is absent.")
+
+cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities.clear()
+print(cities)
+
