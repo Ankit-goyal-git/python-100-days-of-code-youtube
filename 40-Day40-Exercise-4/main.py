@@ -12,3 +12,40 @@
 #   remove 3 random characters from start and end. Now remove the last letter and append it to the beginning
 
 # Your program should ask whether you want to code or decode
+import random
+import string
+
+def randomchar():
+    ranl=""
+    for i in range(0,3):
+        ranl+=random.choice(string.ascii_letters)
+    return ranl
+c=int(input("want to code(0) or decode(1)?"))
+if(c==0):
+    str=input("enter string: ")
+    print(str)
+    coding=True
+else:
+    dec=input("enter string: ")
+    coding=False
+strr=""
+if(coding):
+    if(len(str)<=3):
+        dec=str[::-1]
+        # print("h")
+    else:
+        dec=randomchar()+str[1:len(str)]+str[0]+randomchar()
+        # print("hgf")
+    print(dec)
+
+if(not coding):
+    if(len(dec)<=3):
+        strr=dec[::-1]
+        # print("h")
+    else:
+        strr=dec[3:len(dec)-3]
+        # print(strr[len(str)-1])
+        # print(strr[0:len(str)-1])
+        strr=strr[len(strr)-1]+strr[0:len(strr)-1]
+        # print("hgf")
+    print(strr)
